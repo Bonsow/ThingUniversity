@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Navigation Example</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.min.css">
+
+<!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body>
+<div id="headerWrapper">
+	<header id="top">
+        <img src="images/logo1x.png" alt="House Logo for Definitely Architecture" width="50" height="50" srcset="images/logo2x.png 1x, images/logo1x.png 2x, images/logo3x.png 3x">
+		<span>Thing University</span>
+        <a href="#navlinks">&#9776;</a>
+	</header>
+</div><!-- end header wrapper -->
+
+    
+    
+<div id="navWrapper">
+    <nav id="navlinks">
+        <a href="#top">&#10005;</a>
+        <ul>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Services</a></li>
+            <li class="active"><a href="#">Best Practices</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</div> <!-- end nav wrapper -->
+
+<div id="mainWrapper">
+    <main>
+
+        <h1>Form to buy a thing</h1>
+        <p>Here is where you can buy one of our university things, The thing you'll get is unknown, which makes it very exciting.</p>
+
+        <form method="get" action="thanks.html" class="theThingForm" autocomplete="on">
+            <h3>Personal Information</h3>
+            <label>First Name: <input type="text" name="fname" autocomplete="given-name" required title="First Name Here"></label>
+            <label>Last Name: <input type="text" name="lname" autocomplete="family-name" required title="Last Name Here"></label>
+            <label>Email: <input type="email" name="email" autocomplete="email" required title="Your Email Here"></label>
+            <label>Phone: <input type="tel" name="phone" autocomplete="tel" required title="Your Phone number here"></label>
+
+            <h3>Why are you getting a thing</h3>
+            <label>
+                <select name="condition">
+                    <option value="No selection name">Please Select</option>
+                    <option value="fair">Fair selection</option>
+                </select>
+            </label>
+
+            <h3>The thing you're getting</h3>
+            <label><input type="checkbox" name="bigThing"> Big Thing</label>
+            <label><input type="checkbox" name="mediumThing"> Medium Thing</label>
+            <label><input type="checkbox" name="littleThing"> Little Thing</label>
+
+            <h3>when do you want your thing?</h3>
+            <label><input type="radio" name="whenThing" value="now"> Now</label>
+            <label><input type="radio" name="whenThing" value="soon"> Soon</label>
+            <label><input type="radio" name="whenThing" value="later"> Later</label>
+
+            <label>UserName (6 or more) <input type="text" required minlength="6" title="please enter a valid username"></label>
+
+            <label>Password (5-9 letters or numbers) <input type="password" name="password" required pattern="[A-Za-z0-9]{5,9}"></label>
+
+            <input type="submit" value="buy the thing">
+        </form>
+
+    </main>
+</div><!-- end main wrapper -->
+    
+<div id="footerWrapper">
+    <footer>
+        <p>Copyright &copy; 2025 Design Thinking Inc. All rights reserved. 
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Clients</a></p>
+    </footer>
+</div> <!-- end footer wrapper -->
+   
+</body>
+</html> 
